@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth:400,400italic,700italic,700);
+body {
+  font-family: "Amaranth", sans-serif;
+  text-align: center;
+  background-color: #edf3f8;
+}
+
+.card-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.titleheader{
+  text-align: center;
+}
+
+.c-card {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+}
+.c-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
+}
+.c-card__image {
+  width: 300px;
+  height: 300px;
+  opacity: .7;
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.c-card__body {
+  padding: 20px;
+}
+.c-card__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.c-card__subtitle {
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 0;
+}
+.c-card__intro {
+  margin-bottom: 0;
+}
+.c-card__footer {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
