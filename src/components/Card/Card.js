@@ -1,5 +1,4 @@
 import './Card.scss';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const Card = (posts) => {
@@ -13,20 +12,19 @@ const Card = (posts) => {
                  <article className="c-card">
 
                     <h1 className='titleheader'>{post.post.title}</h1>
-
-                     <header className="c-card__header">
+                    <header className="c-card__header">
                          <img src={post.post.image}  className="c-card__image" alt="Card Image" />
-                     </header>
+                    </header>
 
                     <div className="c-card__body">
-                        <h2 className="c-card__title">
+                        <h2 className="c-card__source">
                             {post.post.source}
                         </h2>
-                        <p className="c-card__subtitle">
+                        <p className="c-card__creator">
                             {post.post.creator}
                         </p>
         
-                        <p className="c-card__intro">
+                        <p className="c-card__shortdescription">
                             {post.post.shortdescription} 
                         </p>
       

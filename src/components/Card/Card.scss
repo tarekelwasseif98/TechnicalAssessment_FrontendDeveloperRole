@@ -32,7 +32,7 @@ body {
   box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
 }
 .c-card__image {
-  width: 300px;
+  width: 320px;
   height: 300px;
   opacity: .7;
   animation: loading 1s linear infinite alternate;
@@ -50,7 +50,7 @@ body {
 .c-card__body {
   padding: 20px;
 }
-.c-card__title {
+.c-card__source {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.2;
@@ -58,12 +58,12 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
-.c-card__subtitle {
+.c-card__creator {
   font-size: 13px;
   margin-top: 5px;
   padding: 0;
 }
-.c-card__intro {
+.c-card__shortdescription {
   margin-bottom: 0;
 }
 .c-card__footer {

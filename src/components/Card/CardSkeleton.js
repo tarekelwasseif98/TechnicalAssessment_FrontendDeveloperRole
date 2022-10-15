@@ -1,4 +1,4 @@
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import Skeleton from 'react-loading-skeleton'
 import './Card.scss';
 
 const CardSkeleton = ({cards}) => {
@@ -6,30 +6,27 @@ const CardSkeleton = ({cards}) => {
         Array(cards).fill(0).map((item, i) => <section className="card-container">
         <article className="c-card" key={i}>
 
-           <h1 className='titleheader'><Skeleton/></h1>
-
+            <h1 className='titleheader'><Skeleton/></h1>
             <header className="c-card__header">
-                <Skeleton width={300} height={300}/>
+                <Skeleton width={320} height={300}/>
             </header>
 
-           <div className="c-card__body">
-               <h2 className="c-card__title">
+            <div className="c-card__body">
+               <h2 className="c-card__source">
                <Skeleton/>
                </h2>
-               <p className="c-card__subtitle">
+               <p className="c-card__creator">
                <Skeleton/>
                </p>
-
-               <p className="c-card__intro">
+               <p className="c-card__shortdescription">
                <Skeleton/>
                </p>
+            </div>
 
-           </div>
-
-           <footer className="c-card__footer">
+            <footer className="c-card__footer">
                 <p><Skeleton/></p>
                 <a><Skeleton/></a>
-           </footer>
+            </footer>
        </article>
    </section>)
      );

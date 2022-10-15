@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
 import Card from './components/Card/Card';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import { SkeletonTheme } from 'react-loading-skeleton'
 import CardSkeleton from './components/Card/CardSkeleton';
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
         {post}
     )
 })
+   const postslength =  posts?.length;
 
   return (
     <div className="App">
@@ -41,7 +42,7 @@ function App() {
         <h1>
           RSS Feed Application
         </h1>
-        {isLoading && <CardSkeleton cards={8}/>}
+        {isLoading && <CardSkeleton cards={postslength}/>}
         <div>
           <Card posts={posts}/>
         </div>
